@@ -1,0 +1,36 @@
+.menu-container {
+  padding-bottom: 16px;
+  margin-bottom: 34px;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: center;
+}
+.nav-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.nav-titel {
+  color: $main-text-color;
+  background-color: #f5f4fa;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  cursor: pointer;
+  border-radius: 4px;
+  min-width: 73px;
+  text-align: center;
+  padding: 6px 22px;
+  border: none;
+
+  transition: background-color $transition,
+    color $transition;
+
+    &:hover {
+  color: $main-bg-color;
+  background-color: $acent-color;
+}
+}
+

@@ -1,0 +1,102 @@
+.product-container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 24px;
+  padding-left: 24px;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.product.list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product a {
+  display: inline-block;
+}
+
+
+.flex.list-item {
+  width: calc((100% - 60px) / 3);
+
+  margin-right: 30px;
+  margin-bottom: 30px;
+
+
+&:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+&:nth-child(3n) {
+  margin-right: 0px;
+}
+
+&:nth-last-child(-n + 3) {
+  margin-bottom: 0px;
+}
+
+}
+
+
+
+
+
+
+
+.work-titel {
+  color: $main-text-color;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  margin-top: 0px;
+  margin-bottom: 4px;
+}
+.product p {
+  margin: 0px;
+}
+
+.product .work-text {
+  color: $secondary-text-color;
+  font-size: 16px;
+  line-height: 1.87;
+}
+
+.product-thumb {
+  position: relative;
+  overflow: hidden;
+}
+
+.overflow {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  transform: translateY(100%);
+  background-color: rgba(33, 150, 243, 0.9);
+  opacity: 0;
+
+  transition: transform $transition,
+    opacity $transition;
+}
+
+.overflow > p {
+  padding: 63px 24px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.5em;
+  color: $main-bg-color;
+}
+
+.link-hover:hover .overflow {
+  transform: translateY(0);
+  opacity: 1;
+}
+

@@ -1,0 +1,57 @@
+%logo {
+  font-family: Raleway, sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 1.16;
+  display: inline-block;
+
+  @media screen and (min-width: 1600px) {
+  font-size: 26px;
+  line-height: 1.2;
+}
+}
+
+.logo-head {
+  @extend %logo;
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+@media screen and (min-width: 768px) {
+  padding-top: 26px;
+  padding-bottom: 26px;
+  margin-right: 88px;
+}
+
+@media screen and (min-width: 1600px) {
+  padding-top: 24px;
+  padding-bottom: 25px;
+  margin-right: 90px;
+}
+
+  &-blue {
+  color: $acent-color;
+}
+&-black {
+  color: $main-text-color;
+}
+
+}
+
+.logo-footer {
+  @extend %logo;
+  margin-bottom: 20px;
+
+&-blue {
+  color: $acent-color;
+}
+&-white {
+  color: $main-bg-color;
+}
+}
+
+
+
+
+
+
+

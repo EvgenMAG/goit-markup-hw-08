@@ -1,0 +1,38 @@
+.clients {
+  display: flex;
+  margin: -15px;
+
+&-item {
+  width: calc((100% - 150px) / 6);
+  margin: 15px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+&-link {
+  display: flex;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+  color: #afb1b8;
+  transition: border $transition,
+    color $transition;
+
+    &:hover {
+  border-color: $acent-color;
+  color: $acent-color;
+
+}
+}
+
+&-icon {
+  fill: currentColor;
+}
+
+}
+
+
+
