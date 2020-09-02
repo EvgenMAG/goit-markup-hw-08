@@ -1,62 +1,42 @@
 
 
 
+.item.flex {
+  background-color: $main-bg-color;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 0px 0px 4px 4px;
+
+&:not(:last-child){
+margin-bottom: 30px;
+}
+
+}
+
 .team-container {
   padding-top: 30px;
   padding-bottom: 24px;
-}
-
-
-
-.our-team {
-  display: flex;
-  margin: -15px;
-
-  & h3 {
-  font-weight: 500;
+  
+  & > h3 {
+      font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
   text-align: center;
   margin-top: 0px;
   margin-bottom: 10px;
-}
-
-& > .item.flex {
-  width: calc((100% - 90px) / 4);
-  margin: 15px;
-  background-color: $main-bg-color;
-  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 1px 3px rgba(0, 0, 0, 0.12);
-  border-radius: 0px 0px 4px 4px;
-}
-
-}
-
-.team-text {
-  color: $secondary-text-color;
+  }
+  & .team-text{
+  
   font-weight: 400;
   font-size: 16px;
   line-height: 1.2;
   text-align: center;
+  color: $secondary-text-color;
   margin-top: 0px;
   margin-bottom: 16px;
+  }
 }
 
-
-team {
-  display: flex;
-  width: 206px;
-  margin-left: auto;
-  margin-right: auto;
-
-}
-
-.social.list.team {
-  display: flex;
-  width: 206px;
-  margin-left: auto;
-  margin-right: auto;
-}
 
 
 .social-link-team {
@@ -76,9 +56,6 @@ team {
 }
 }
 
-
 .team-item-icon {
-  width: 20px;
-  height: 20px;
   fill: currentColor;
 }

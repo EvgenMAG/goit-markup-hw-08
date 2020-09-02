@@ -1,9 +1,10 @@
 .clients {
   display: flex;
+  flex-wrap: wrap;
   margin: -15px;
 
 &-item {
-  width: calc((100% - 150px) / 6);
+  width: calc(50% - 30px);
   margin: 15px;
 
   background-repeat: no-repeat;
@@ -33,6 +34,3 @@
 }
 
 }
-
-
-

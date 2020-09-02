@@ -1,14 +1,22 @@
+
 .menu-container {
-  padding-bottom: 16px;
-  margin-bottom: 34px;
+
+  padding-bottom:25px;
 }
 
 .nav-menu {
-  display: flex;
+  display: inline-flex;
   justify-content: center;
+
+  @media screen and (max-width: 767px){
+    flex-wrap: wrap;
+  }
 }
-.nav-item:not(:last-child) {
+
+
+.nav-item {
   margin-right: 8px;
+   margin-bottom: 15px;
 }
 
 .nav-titel {
@@ -33,4 +41,3 @@
   background-color: $acent-color;
 }
 }
-

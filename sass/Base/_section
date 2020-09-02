@@ -1,47 +1,25 @@
 .section {
-padding-top: 60px;
-padding-bottom: 60px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 
-@media screen and (min-width: 1600px) {
-  
-  padding-top: 94px;
-  padding-bottom: 94px;
+&.temporary {
+    @media (max-width: 1599px){
+        display: none;
+    }
 }
-
-&.temporary{
-  @media screen and (max-width: 1599px){
-    display: none;
-  }
-}
-
-@media screen and (min-width: 1600px){
- &.fishki {
-  padding-bottom: 0px;
-}
-}
- 
-
-
 &-title {
   color: $main-text-color;
 
   font-weight: 700;
   font-size: 28px;
-  line-height: 1.2;
+  line-height: 1.18;
   text-align: center;
   margin-top: 0px;
-  margin-bottom: 50px;
-
-  @media screen and (min-width: 1600px){
-    font-size: 36px;
-  }
-
+  margin-bottom: 30px;
 }
 
 &.bg {
   background-color: #f5f4fa;
 }
-
 }
-
 

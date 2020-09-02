@@ -1,8 +1,15 @@
 
-  .item.fishki:not(:last-child) {
-  @media screen and (max-width: 767px){
-  padding-bottom: 30px;
-  }
+.item.fishki:not(:last-child){
+    margin-bottom: 30px;
+}
+
+.item-container {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-align: center;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
 }
 
 .benefits-title {
@@ -12,65 +19,9 @@
   text-transform: uppercase;
   margin-top: 0px;
   margin-bottom: 10px;
-
-text-align: center;
-
-}
-
-.item-container {
-  padding: 25px 100px;
-  height: 120px;
-  background-color: #f5f4fa;
-  border-radius: 4px;
-  margin-bottom: 30px;
-
   text-align: center;
+
 }
-
-
-  
-  @media screen and (min-width: 768px) and (max-width: 1599px){
-    .list-benefits {
-  display: flex;
-  flex-wrap: wrap;
-  margin: -15px;
-    }
-}
-
-@media screen and (min-width: 1600px) {
-  .list-benefits {
-  display: flex;
-  margin: -15px;
-    }
-}
-
-
-
-
-@media screen and (min-width: 768px) {
-  width: calc(50% - 30px);
-  margin: 15px;
-}
-
-  @media screen and (min-width: 1600px) {
-  width: calc((100% - 90px) / 4);
-  margin: 15px;
-}
-
-  
-
-.item-container {
-  padding: 25px 100px;
-  height: 120px;
-  background-color: #f5f4fa;
-  border-radius: 4px;
-  margin-bottom: 30px;
-}
-.item-icon {
-  width: 70px;
-  height: 70px;
-}
-
 
 .benefits-text {
   color: $secondary-text-color;
