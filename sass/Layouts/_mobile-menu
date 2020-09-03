@@ -1,0 +1,26 @@
+
+.menu-button {
+  display: inline-flex;
+  padding: 0;
+  margin-left: auto;
+  border: none;
+  background-color: transparent;
+
+  &:hover .icon-close,
+  &:hover .icon-menu {
+      fill: $acent-color;
+  }
+}
+
+.menu-button .icon-close{
+    display: none;
+}
+
+.menu-button.is-open .icon-close{
+    display: block;
+}
+
+.menu-button.is-open .icon-menu{
+    display: none;
+}
+

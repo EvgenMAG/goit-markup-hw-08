@@ -12,5 +12,9 @@
     @media screen and (max-width: 767px){
 display: none; 
     }
-    
+}
+
+.flexbox-nav {
+  display: flex;
+  align-items: center;
 }

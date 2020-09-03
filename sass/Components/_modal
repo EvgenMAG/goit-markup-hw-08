@@ -6,35 +6,47 @@
   height: 100%;
   background: rgba(0, 0, 0, 0.2);
   transition: opacity $transition;
+padding: 93px 15px;
+overflow-y: scroll;
 
   &.is-hidden {
   opacity: 0;
   pointer-events: none;
 
-  & .modal {
+
+@media screen and (min-width: 480px){
+& .modal {
   transform: translate(-50%, -50%) scale(0.9);
 }
+  
 }
 }
+}
+
 
 .modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(1);
-  transform: translate $transition;
-  transition: transform $transition;
-  width: 100%;
-  height: 609px;
-
+  
+  padding: 8px;
   background: $main-bg-color;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 
   @media screen and (min-width: 480px){
-    width: 450px;
+position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  
+  transition: transform $transition;
+  width: 450px;
+  height: 609px;
   }
+@media screen and (min-width: 1600px){
+  width: 528px;
+  height: 581px;
+}
+ 
 }
 
 .close-b {
@@ -43,8 +55,8 @@
   height: 30px;
   border: none;
   outline: none;
-  margin-top: 8px;
-  margin-right: 8px;
+
+ 
   margin-left: auto;
   margin-bottom: auto;
   padding: 0px;
@@ -71,6 +83,11 @@
 
   @media screen and (min-width: 480px){
     width: 370px;
+
+    @media screen and (min-width: 1600px){
+  width: 448px;
+  
+}
   }
 
 & > h2 {
@@ -205,6 +222,9 @@ form button {
   color: $acent-color;
   background-color: $main-bg-color;
 }
+@media screen and (min-width: 480px){
+  width: 200px;
+}
 }
 
 .label-checkbox {
@@ -229,7 +249,7 @@ form button {
 }
 
 .check-text {
-  display: inline-flex;
+  display: flex;
   align-items: center;
 
   &::before {
