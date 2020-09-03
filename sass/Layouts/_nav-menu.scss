@@ -1,14 +1,23 @@
-
 .menu-container {
 
-  padding-bottom:25px;
+  padding-bottom: 25px;
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 30px;
+
+  }
+
+  @media screen and (min-width: 1600px) {
+    padding-bottom: 50px;
+
+  }
 }
 
 .nav-menu {
-  display: inline-flex;
+  display: flex;
   justify-content: center;
 
-  @media screen and (max-width: 767px){
+  @media screen and (max-width: 767px) {
     flex-wrap: wrap;
   }
 }
@@ -16,7 +25,13 @@
 
 .nav-item {
   margin-right: 8px;
-   margin-bottom: 15px;
+  margin-bottom: 15px;
+
+  @media screen and (min-width: 768px) {
+    &:not(:last-child) {
+      margin-right: 8px;
+    }
+  }
 }
 
 .nav-titel {
@@ -36,8 +51,8 @@
   transition: background-color $transition,
     color $transition;
 
-    &:hover {
-  color: $main-bg-color;
-  background-color: $acent-color;
-}
+  &:hover {
+    color: $main-bg-color;
+    background-color: $acent-color;
+  }
 }
