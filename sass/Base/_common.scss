@@ -19,6 +19,7 @@ html {
   width: 1px !important;
   overflow: hidden;
 }
+
 .list {
   list-style: none;
   margin: 0px;
@@ -45,4 +46,15 @@ a {
 
 body.modal-open {
   overflow: hidden;
+}
+
+.social.list {
+  display: flex;
+  width: 206px;
+  margin-left: auto;
+  margin-right: auto;
+
+  &>li+li {
+    margin-left: 10px;
+  }
 }

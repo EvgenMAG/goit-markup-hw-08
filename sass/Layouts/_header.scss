@@ -1,20 +1,116 @@
 .header {
+  position: relative;
   border-bottom: 1px solid #ececec;
 
   & .link:hover,
   & .link:focus {
-  color: $acent-color;
-}
+    color: $acent-color;
+  }
 }
 
 .site-nav,
 .contact-nav {
-    @media screen and (max-width: 767px){
-display: none; 
-    }
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
 
 .flexbox-nav {
   display: flex;
   align-items: center;
 }
+
+
+
+// .flex-container {
+//   display: flex;
+//   align-items: center;
+//   justify-content: flex-end;
+// }
+
+// .flexbox-nav {
+//   display: flex;
+// }
+
+// .site-nav .link {
+//   color: $main-text-color;
+//   font-weight: 500;
+//   font-size: 14px;
+//   line-height: 1.14;
+//   letter-spacing: 0.02em;
+//   transition: color $transition;
+
+//   &.current {
+//     position: relative;
+//     color: $acent-color;
+//   }
+// }
+
+
+// .link.current::before {
+//   content: "";
+//   position: absolute;
+//   left: 0px;
+//   bottom: -1.5px;
+//   width: 100%;
+//   height: 4px;
+//   background-color: $acent-color;
+//   border-radius: 2px;
+// }
+
+// .site-nav.list {
+//   display: flex;
+// }
+
+// .site-nav .item+.item {
+//   margin-left: 50px;
+// }
+
+// .site-nav .link {
+//   display: block;
+
+//   padding-top: 32px;
+//   padding-bottom: 32px;
+// }
+
+// .contact-nav .link {
+//   display: inline-block;
+
+//   color: $secondary-text-color;
+//   font-weight: 500;
+//   font-size: 14px;
+//   line-height: 1.14;
+//   letter-spacing: 0.02em;
+// }
+
+// .contact-nav.list {
+//   display: flex;
+//   margin-left: auto;
+// }
+
+// .contact-nav .item+.item {
+//   margin-left: 30px;
+// }
+
+
+// .img-envelope>.envelope {
+//   display: inline-flex;
+//   align-items: center;
+//   transition: color $transition;
+// }
+
+// .img-phone>.phone {
+//   display: inline-flex;
+//   align-items: center;
+//   transition: color $transition;
+// }
+
+// .icon-envelope {
+//   margin-right: 10px;
+//   fill: currentColor;
+// }
+
+// .icon-phone {
+//   margin-right: 10px;
+//   fill: currentColor;
+// }
