@@ -20,12 +20,20 @@
             <span class="logo-head-blue">Web</span>
             <span class="logo-head-black">Studio</span>
           </a>
+          <button type="button" class="menu-button is-open" data-menu-button aria-expanded="false">
+            <svg width="40" height="40" aria-label="Переключатель меню">
+
+              <use class="icon-close" href="./img-main/sprite.svg#icon-close"></use>
+              <use class="icon-menu" href="./img-main/sprite.svg#icon-menu"></use>
+
+            </svg>
+          </button>
           <ul class="site-nav list">
             <li class="item">
               <a href="./index.html" class="link">Студия</a>
             </li>
             <li class="item">
-              <a href="" class="link current">Портфолио</a>
+              <a href="./portfolio.html" class="link current">Портфолио</a>
             </li>
             <li class="item">
               <a href="" class="link">Контакты</a>
@@ -48,7 +56,40 @@
               +38 096 111 11 11</a>
           </li>
         </ul>
+        <!-- Mobile menu -->
+        <div class="mobile-menu is-open" data-menu>
+          <ul class="mobile-nav list">
+            <li class="item">
+              <a href="./index.html" class="link">Студия</a>
+            </li>
+            <li class="item">
+              <a href="" class="link current">Портфолио</a>
+            </li>
+            <li class="item">
+              <a href="" class="link">Контакты</a>
+            </li>
+          </ul>
+          </nav>
+          <ul class="mobile-contact list">
+            <li class="item img-envelope">
+              <a href="mailto:info@devstudio.com" class="link envelope">
+                <svg class="icon-envelope" width="16" height="12">
+                  <use xlink:href="./img-main/sprite.svg#envelope"></use>
+                </svg>
+                info@devstudio.com</a>
+            </li>
+            <li class="item img-phone">
+              <a href="tel:+380961111111" class="link phone">
+                <svg class="icon-phone" width="10" height="15">
+                  <use xlink:href="./img-main/sprite.svg#smartphone"></use>
+                </svg>
+                +38 096 111 11 11</a>
+            </li>
+          </ul>
+          <script src="./js/menu.js"></script>
+        </div>
       </div>
+
     </div>
   </header>
   <!-- main container -->
