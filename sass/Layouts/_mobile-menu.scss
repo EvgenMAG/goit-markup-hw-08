@@ -4,13 +4,11 @@
     margin-left: auto;
     border: none;
     background-color: transparent;
-
-
+    outline: none;
 
     &:hover .icon-close,
     &:hover .icon-menu,
-    &:focus-within .icon-close,
-    &:focus-within .icon-menu {
+        {
         fill: $acent-color;
 
 

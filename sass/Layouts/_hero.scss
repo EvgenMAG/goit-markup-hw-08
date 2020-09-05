@@ -2,9 +2,47 @@
   background-color: gray;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)),
-    url(../img-main/Hero-compressed.jpg);
+    url(../../img-main/Hero/Mobile/Header480.png);
 
-  height: 400px;
+
+  @media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+      url(../../img-main/Hero/Mobile/Header480@2x.png);
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+      url(../../img-main/Hero/Tablet/Header768.png);
+
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)),
+        url(../../img-main/Hero/Tablet/Header768@2x.png);
+    }
+  }
+
+  @media screen and (min-width: 1600px) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+      url(../../img-main/Hero/Desktop/Hero1600.png);
+
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)),
+        url(../../img-main/Hero/Desktop/Hero1600@2x.png);
+    }
+  }
+
+
+  // height: 400px;
   max-width: 1600px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -40,3 +78,28 @@
     }
   }
 }
+
+
+// @media scren and (max-width: 768px) {
+//   .hero {
+//     background-image: url(../../img-main/Hero/Mobile/Header480.png);
+
+//     @media screen and (min-device-pixel-ratio: 2),
+//     screen and (min-resolution: 192dpi),
+//     screen and (min-resolution: 2dppx) {
+//       background-image: url(../../img-main/Hero/Mobile/Header480@2x.png);
+//     }
+//   }
+// }
+
+// @media scren and (min-width: 768px) {
+//   .hero {
+//     background-image: url(../../img-main/Hero/Tablet/Header768.png);
+
+//     @media screen and (min-device-pixel-ratio: 2),
+//     screen and (min-resolution: 192dpi),
+//     screen and (min-resolution: 2dppx) {
+//       background-image: url(../../img-main/Hero/Tablet/Header768@2x.png);
+//     }
+//   }
+// }

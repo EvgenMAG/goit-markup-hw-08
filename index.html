@@ -169,8 +169,11 @@
         <ul class="job-title list">
           <li class="job-item">
             <div class="container-position">
-              <img src="./img-main/loptop.jpg" alt="компьтер" width="370" />
-
+              <picture>
+                <source srcset="./img-main/Templates/desktop.jpg 1x, ./img-main/Templates/desktop@2x.jpg 2x"
+                  media="(min-width: 1200px)" />
+                <img src="./img-main/Templates/desktop.jpg" alt="компьтер" width="370" />
+              </picture>
               <div class="job-item-title">
                 <h3>Десктопные приложения</h3>
               </div>
@@ -178,8 +181,11 @@
           </li>
           <li class="job-item">
             <div class="container-position">
-              <img src="./img-main/mobile.jpg" alt="мобильный" width="370" />
-
+              <picture>
+                <source srcset="./img-main/Templates/mobile.jpg 1x, ./img-main/Templates/mobile@2x.jpg 2x"
+                  media="(min-width: 1200px)" />
+                <img src="./img-main/Templates/mobile.jpg" alt="мобильный" width="370" />
+              </picture>
               <div class="job-item-title">
                 <h3>Мобильные приложения</h3>
               </div>
@@ -187,8 +193,11 @@
           </li>
           <li class="job-item">
             <div class="container-position">
-              <img src="./img-main/tablet.jpg" alt="монитор" width="370" />
-
+              <picture>
+                <source srcset="./img-main/Templates/tablet.jpg 1x, ./img-main/Templates/tablet@2x.jpg 2x"
+                  media="(min-width: 1200px)" />
+                <img src="./img-main/Templates/tablet.jpg" alt="монитор" width="370" />
+              </picture>
               <div class="job-item-title">
                 <h3>Дизайнерские решения</h3>
               </div>
@@ -203,7 +212,15 @@
         <h2 class="section-title">Наша команда</h2>
         <ul class="our-team list flex">
           <li class="item flex team">
-            <img src="./img-main/Igor.jpg" alt="Igor" />
+            <picture>
+              <source srcset="./img-main/Team/Desktop/Igor1600.jpg 1x, ./img-main/Team/Desktop/Igor1600@2x.jpg 2x"
+                media="(min-width: 1200px)" />
+              <source srcset="./img-main/Team/Tablet/Igor768.jpg 1x, ./img-main/Team/Tablet/Igor768@2x.jpg  2x"
+                media="(min-width: 768px)" />
+              <source srcset="./img-main/Team/Mobile/Igor480.jpg 1x, ./img-main/Team/Mobile/Igor480@2x.jpg 2x"
+                media="(max-width: 767px)" />
+              <img src="./img-main/Team/Mobile/Igor480.jpg" width="450" height="460" alt="Игорь Демьяненко" />
+            </picture>
             <div class="team-container">
               <h3>Игорь Демьяненко</h3>
               <p lang="eu" class="team-text">Product Designer</p>
@@ -241,7 +258,15 @@
           </li>
 
           <li class="item flex team">
-            <img src="./img-main/Olga.jpg" alt="olga" />
+            <picture>
+              <source srcset="./img-main/Team/Desktop/olga1600.jpg 1x, ./img-main/Team/Desktop/Olga1600@2x.jpg 2x"
+                media="(min-width: 1200px)" />
+              <source srcset="./img-main/Team/Tablet/Olga768.jpg 1x, ./img-main/Team/Tablet/Olga768@2x.jpg  2x"
+                media="(min-width: 768px)" />
+              <source srcset="./img-main/Team/Mobile/Olga480.jpg 1x, ./img-main/Team/Mobile/Olga480@2x.jpg 2x"
+                media="(max-width: 767px)" />
+              <img src="./img-main/Team/Mobile/Olga480.jpg" width="450" height="460" alt="Ольга Репина" />
+            </picture>
             <div class="team-container">
               <h3>Ольга Репина</h3>
               <p lang="eu" class="team-text">Frontend Developer</p>
@@ -278,7 +303,15 @@
             </div>
           </li>
           <li class="item flex team">
-            <img src="./img-main/Nikolya.jpg" alt="фото" />
+            <picture>
+              <source srcset="./img-main/Team/Desktop/Nik1600.jpg 1x, ./img-main/Team/Desktop/Nik1600@2x.jpg 2x"
+                media="(min-width: 1200px)" />
+              <source srcset="./img-main/Team/Tablet/Nik768.jpg 1x, ./img-main/Team/Tablet/Nik768@2x.jpg  2x"
+                media="(min-width: 768px)" />
+              <source srcset="./img-main/Team/Mobile/Nik480.jpg 1x, ./img-main/Team/Mobile/Nik480@2x.jpg 2x"
+                media="(max-width: 767px)" />
+              <img src="./img-main/Team/Mobile/Nik480.jpg" width="450" height="460" alt="Николай Тарасов" />
+            </picture>
             <div class="team-container">
               <h3>Николай Тарасов</h3>
               <p lang="eu" class="team-text">Marketing</p>
@@ -315,7 +348,15 @@
             </div>
           </li>
           <li class="item flex team">
-            <img src="./img-main/Mike.jpg" alt="фото" />
+            <picture>
+              <source srcset="./img-main/Team/Desktop/Mik1600.jpg 1x, ./img-main/Team/Desktop/Mik1600@2x.jpg 2x"
+                media="(min-width: 1200px)" />
+              <source srcset="./img-main/Team/Tablet/Mik768.jpg 1x, ./img-main/Team/Tablet/Mik768@2x.jpg  2x"
+                media="(min-width: 768px)" />
+              <source srcset="./img-main/Team/Mobile/Mike480.jpg 1x, ./img-main/Team/Mobile/Mike480@2x.jpg 2x"
+                media="(max-width: 767px)" />
+              <img src="./img-main/Team/Mobile/Mike480.jpg" width="450" height="460" alt="Михаил Ермаков" />
+            </picture>
             <div class="team-container">
               <h3>Михаил Ермаков</h3>
               <p lang="eu" class="team-text">UI Designer</p>

@@ -297,12 +297,11 @@ body.modal-open {
   margin-left: auto;
   border: none;
   background-color: transparent;
+  outline: none;
 }
 
 .menu-button:hover .icon-close,
-.menu-button:hover .icon-menu,
-.menu-button:focus-within .icon-close,
-.menu-button:focus-within .icon-menu {
+.menu-button:hover .icon-menu {
   fill: #2196f3;
 }
 
