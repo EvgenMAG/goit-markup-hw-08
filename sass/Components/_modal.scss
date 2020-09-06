@@ -252,12 +252,15 @@ form button {
 }
 
 .check-text {
-  display: flex;
+  // display: flex;
   align-items: center;
+  padding-left: 30px;
 
   &::before {
     content: "";
     display: inline-block;
+    position: absolute;
+    left: 30px;
     width: 16px;
     height: 15px;
     border: 1.5px solid #212121;

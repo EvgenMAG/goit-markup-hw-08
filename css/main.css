@@ -1425,17 +1425,17 @@ form button:hover {
 }
 
 .check-text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-left: 30px;
 }
 
 .check-text::before {
   content: "";
   display: inline-block;
+  position: absolute;
+  left: 30px;
   width: 16px;
   height: 15px;
   border: 1.5px solid #212121;
